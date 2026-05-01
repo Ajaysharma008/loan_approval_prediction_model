@@ -78,8 +78,8 @@ st.markdown("""
 st.markdown('<div class="main-header">🏦 Modern Loan Approval System</div>', unsafe_allow_html=True)
 
 # Image Paths
-APPROVED_IMG_PATH = r"C:\Users\Ajay  Sharma\.gemini\antigravity\brain\e95a932a-5050-4e16-8a94-2c8807eae9f1\loan_approved_1777652795132.png"
-REJECTED_IMG_PATH = r"C:\Users\Ajay  Sharma\.gemini\antigravity\brain\e95a932a-5050-4e16-8a94-2c8807eae9f1\loan_rejected_1777652916706.png"
+APPROVED_IMG_PATH = "assets/approved.jpg"
+REJECTED_IMG_PATH = "assets/rejected.jpg"
 
 # Form container
 with st.container():
@@ -103,7 +103,7 @@ with st.container():
 
     st.markdown("---")
 
-    if st.button("Predict Loan Status 🚀"):
+    if st.button("Predict Loan Status"):
         # Map categorical variables
         edu_val = edu_map[education]
         emp_val = emp_map[self_employed]
